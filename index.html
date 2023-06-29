@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/lightBox.js" defer></script>
     <script src="js/gallery.js" defer></script>
+    <script src="js/validaciones.js" defer></script>
     <title>portfolio</title>
   </head>
 
@@ -233,17 +234,19 @@
                 type="text"
                 name="text"
                 autocomplete="off"
-                class="input"
+                class="input" 
+                data-input-form
               />
               <label class="user-label">Nombre</label>
             </div>
             <div class="input-group">
               <input
                 required=""
-                type="text"
+                type="email"
                 name="text"
                 autocomplete="off"
                 class="input"
+                data-input-form
               />
               <label class="user-label">Correo</label>
             </div>
@@ -254,11 +257,13 @@
                 name="text"
                 autocomplete="off"
                 class="input"
+                data-input-form
               />
               <label class="user-label">Asunto</label>
             </div>
             <div class="input-group">
               <textarea
+                required=""
                 name="mensaje"
                 id="mensaje"
                 class=" input"
@@ -266,6 +271,7 @@
                 rows="10"
                 style="resize: none"
                 placeholder="ingresa el mensaje"
+                data-input-form
               ></textarea>
             </div>
             <!-- fin label prueba -->
